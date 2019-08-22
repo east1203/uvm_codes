@@ -1,0 +1,6 @@
++incdir+comp
++incdir+obj
++incdir+seq
++incdir+case
+tb_pkg.sv
+top.sv

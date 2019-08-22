@@ -1,0 +1,117 @@
+Command: ./simv +UVM_TESTNAME=case0 -l sim.log
+Chronologic VCS simulator copyright 1991-2014
+Contains Synopsys proprietary information.
+Compiler version I-2014.03; Runtime version I-2014.03;  Aug 22 23:25 2019
+----------------------------------------------------------------
+UVM-1.1d
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test case0...
+VCD+ Writer I-2014.03 Copyright (c) 1991-2014 by Synopsys Inc.
+UVM_INFO comp/driver.sv(23) @ 0: uvm_test_top.env0.i_agt.drv [driver] run_phase
+UVM_INFO seq/sequence0.sv(15) @ 0: uvm_test_top.env0.i_agt.sqr@@seq0 [sequence0] pre_body
+UVM_INFO seq/sequence0.sv(18) @ 0: uvm_test_top.env0.i_agt.sqr@@seq0 [sequence0] body
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @932  
+  A   integral     8     'h62  
+  B   integral     8     'h81  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 70000 : [single alu] A: 98,B:129,op:3, result is     0 !!!
+UVM_INFO comp/model.sv(30) @ 70000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 90000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @949  
+  A   integral     8     'h81  
+  B   integral     8     'h25  
+  op  operation_t  3     add_op
+-------------------------------
+@ 110000 : [single alu] A:129,B: 37,op:1, result is   227 !!!
+UVM_INFO comp/model.sv(30) @ 110000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 130000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @965  
+  A   integral     8     'hc4  
+  B   integral     8     'ha1  
+  op  operation_t  3     add_op
+-------------------------------
+@ 150000 : [single alu] A:196,B:161,op:1, result is   166 !!!
+UVM_INFO comp/model.sv(30) @ 150000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 170000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @981  
+  A   integral     8     'h43  
+  B   integral     8     'h4e  
+  op  operation_t  3     and_op
+-------------------------------
+@ 190000 : [single alu] A: 67,B: 78,op:2, result is   357 !!!
+UVM_INFO comp/model.sv(30) @ 190000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 210000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @997  
+  A   integral     8     'hc7  
+  B   integral     8     'h12  
+  op  operation_t  3     and_op
+-------------------------------
+@ 230000 : [single alu] A:199,B: 18,op:2, result is    66 !!!
+UVM_INFO comp/model.sv(30) @ 230000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 250000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+UVM_INFO seq/sequence0.sv(26) @ 1240000: uvm_test_top.env0.i_agt.sqr@@seq0 [sequence0] post_body
+UVM_INFO /home/IC/uvm/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 1240000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   16
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[driver]     1
+[model]     5
+[scoreboard]     5
+[sequence0]     3
+$finish called from file "/home/IC/uvm/uvm-1.1d/src/base/uvm_root.svh", line 430.
+$finish at simulation time              1240000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1240000 ps
+CPU Time:      0.760 seconds;       Data structure size:   0.3Mb
+Thu Aug 22 23:25:19 2019
