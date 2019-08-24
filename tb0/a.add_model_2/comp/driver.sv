@@ -23,11 +23,12 @@ task run_phase(uvm_phase phase);
   `uvm_info("driver","run_phase",UVM_LOW);
   while(1) begin
     seq_item_port.get_next_item(req);
-    req.print();
+    //`uvm_info("driver","driver one transaction req:",UVM_LOW);
+    //req.print();
+    bfm.drive_one_pkg(req);
     seq_item_port.item_done();
   end
 endtask
-
 
 
 endclass

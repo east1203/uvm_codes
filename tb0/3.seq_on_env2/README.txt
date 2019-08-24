@@ -28,6 +28,6 @@ Basic uvm testbench:
         ->drv
 
 sequence start on env's run_phase.
-Objection raise and drop in sequence;In env'run_phase,seq's starting_phase
-gets env's run_phase.
+Objection raise and drop in sequence;
+In env'run_phase,seq's starting_phase gets env's run_phase.
 

@@ -53,12 +53,24 @@ interface alu_bfm;
         do
           @(negedge clk);//this is negedge
         while(done==0);
-        tr.result = result; //收集计算结果，返回给driver
+        tr.result = result;
         start = 1'b0;
       end
     end
   endtask
 
+//  task collect_one_pkg(ref command_transaction tr);
+//    
+//  endtask
+//
+//  always@(posedge clk )begin
+//    static bit in_command=0;
+//    if(start == 1'b1) begin
+//      if(in_command==1'b0) begin
+//        collec_one_pkg(tr)
+//      end
+//    end
+//  end
 endinterface
 
 `endif
