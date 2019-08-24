@@ -6,13 +6,17 @@ class model extends uvm_component;
 
 uvm_analysis_port#(result_transaction) ap;
 uvm_blocking_get_port#(transaction) port;
-
+virtual alu_bfm bfm;
 function new(string name="model",uvm_component parent=null);
   super.new(name,parent);
   ap=new("ap",this);
   port=new("port",this);
 endfunction
-
+function void build_phase(uvm_phase phase);
+  super.build_phase(phase);
+  if(!uvm_config_db#(virtual alu_bfm)::get(this,"","bfm",bfm))
+    `uvm_fatal("model","Failed to get bfm");
+endfunction
 task run_phase(uvm_phase phase);
   transaction cmd_tr;
   result_transaction rlt_tr;
@@ -21,6 +25,7 @@ task run_phase(uvm_phase phase);
     port.get(cmd_tr);
     `uvm_info("model","model get one cmd_tr",UVM_LOW);
     cmd_tr.print();
+    @(posedge bfm.done);
     case(cmd_tr.op)
       and_op: rlt_tr.result=cmd_tr.A&cmd_tr.B;
       add_op: rlt_tr.result=cmd_tr.A+cmd_tr.B;
