@@ -14,6 +14,7 @@ time : 2019-08-22
   result_monitor.sv
   scoreboard.sv
   model.sv
+  coverage.sv
 [obj]
   transaction.sv
   result_transaction.sv
@@ -42,6 +43,8 @@ top
           ->r_mon
         ->mdl
         ->scb
+        ->cov
 
+(new) Add coverage,coverage class extends from uvm_subscriper.        
 Add scoreboard ,And connect scb with model and result_monitor.
 The scoreboard compares success!
