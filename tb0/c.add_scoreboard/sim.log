@@ -1,7 +1,7 @@
 Command: ./simv +UVM_TESTNAME=case0 -l sim.log
 Chronologic VCS simulator copyright 1991-2014
 Contains Synopsys proprietary information.
-Compiler version I-2014.03; Runtime version I-2014.03;  Aug 22 23:25 2019
+Compiler version I-2014.03; Runtime version I-2014.03;  Aug 24 14:12 2019
 ----------------------------------------------------------------
 UVM-1.1d
 (C) 2007-2013 Mentor Graphics Corporation
@@ -92,26 +92,1328 @@ tr    transaction  -     @997
 @ 230000 : [single alu] A:199,B: 18,op:2, result is    66 !!!
 UVM_INFO comp/model.sv(30) @ 230000: uvm_test_top.env0.mdl [model] model get transaction!!!
 UVM_INFO comp/scoreboard.sv(47) @ 250000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
-UVM_INFO seq/sequence0.sv(26) @ 1240000: uvm_test_top.env0.i_agt.sqr@@seq0 [sequence0] post_body
-UVM_INFO /home/IC/uvm/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 1240000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1013 
+  A   integral     8     'h21  
+  B   integral     8     'ha1  
+  op  operation_t  3     and_op
+-------------------------------
+@ 270000 : [single alu] A: 33,B:161,op:2, result is     2 !!!
+UVM_INFO comp/model.sv(30) @ 270000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 290000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1029 
+  A   integral     8     'ha7  
+  B   integral     8     'hf1  
+  op  operation_t  3     add_op
+-------------------------------
+@ 310000 : [single alu] A:167,B:241,op:1, result is    33 !!!
+UVM_INFO comp/model.sv(30) @ 310000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 330000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1045 
+  A   integral     8     'h66  
+  B   integral     8     'h8f  
+  op  operation_t  3     and_op
+-------------------------------
+@ 350000 : [single alu] A:102,B:143,op:2, result is   408 !!!
+UVM_INFO comp/model.sv(30) @ 350000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 370000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1061 
+  A   integral     8     'h79  
+  B   integral     8     'hd2  
+  op  operation_t  3     add_op
+-------------------------------
+@ 390000 : [single alu] A:121,B:210,op:1, result is     6 !!!
+UVM_INFO comp/model.sv(30) @ 390000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 410000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1077 
+  A   integral     8     'hb9  
+  B   integral     8     'hb2  
+  op  operation_t  3     and_op
+-------------------------------
+@ 430000 : [single alu] A:185,B:178,op:2, result is   331 !!!
+UVM_INFO comp/model.sv(30) @ 430000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 450000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1093 
+  A   integral     8     'hb3  
+  B   integral     8     'h1b  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 470000 : [single alu] A:179,B: 27,op:3, result is   176 !!!
+UVM_INFO comp/model.sv(30) @ 470000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 490000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1109 
+  A   integral     8     'h2a  
+  B   integral     8     'h69  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 510000 : [single alu] A: 42,B:105,op:3, result is   168 !!!
+UVM_INFO comp/model.sv(30) @ 510000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 530000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1125 
+  A   integral     8     'h56  
+  B   integral     8     'h88  
+  op  operation_t  3     add_op
+-------------------------------
+@ 550000 : [single alu] A: 86,B:136,op:1, result is    67 !!!
+UVM_INFO comp/model.sv(30) @ 550000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 570000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1141 
+  A   integral     8     'hd4  
+  B   integral     8     'h31  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 590000 : [single alu] A:212,B: 49,op:3, result is   222 !!!
+UVM_INFO comp/model.sv(30) @ 590000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 610000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1157 
+  A   integral     8     'hb1  
+  B   integral     8     'h3a  
+  op  operation_t  3     add_op
+-------------------------------
+@ 630000 : [single alu] A:177,B: 58,op:1, result is   229 !!!
+UVM_INFO comp/model.sv(30) @ 630000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 650000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1173 
+  A   integral     8     'h66  
+  B   integral     8     'hbc  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 670000 : [single alu] A:102,B:188,op:3, result is   235 !!!
+UVM_INFO comp/model.sv(30) @ 670000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 690000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1189 
+  A   integral     8     'hb6  
+  B   integral     8     'hf0  
+  op  operation_t  3     and_op
+-------------------------------
+@ 710000 : [single alu] A:182,B:240,op:2, result is   218 !!!
+UVM_INFO comp/model.sv(30) @ 710000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 730000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1205 
+  A   integral     8     'hc2  
+  B   integral     8     'hfb  
+  op  operation_t  3     add_op
+-------------------------------
+@ 750000 : [single alu] A:194,B:251,op:1, result is   176 !!!
+UVM_INFO comp/model.sv(30) @ 750000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 770000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1221 
+  A   integral     8     'h51  
+  B   integral     8     'h72  
+  op  operation_t  3     add_op
+-------------------------------
+@ 790000 : [single alu] A: 81,B:114,op:1, result is   445 !!!
+UVM_INFO comp/model.sv(30) @ 790000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 810000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1237 
+  A   integral     8     'hdc  
+  B   integral     8     'h86  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 830000 : [single alu] A:220,B:134,op:3, result is   195 !!!
+UVM_INFO comp/model.sv(30) @ 830000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 850000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1253 
+  A   integral     8     'h5d  
+  B   integral     8     'h3e  
+  op  operation_t  3     add_op
+-------------------------------
+@ 870000 : [single alu] A: 93,B: 62,op:1, result is    90 !!!
+UVM_INFO comp/model.sv(30) @ 870000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 890000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1269 
+  A   integral     8     'hf8  
+  B   integral     8     'h65  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 910000 : [single alu] A:248,B:101,op:3, result is   155 !!!
+UVM_INFO comp/model.sv(30) @ 910000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 930000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1285 
+  A   integral     8     'h20  
+  B   integral     8     'h50  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 950000 : [single alu] A: 32,B: 80,op:3, result is   157 !!!
+UVM_INFO comp/model.sv(30) @ 950000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO comp/scoreboard.sv(47) @ 970000: uvm_test_top.env0.scb [scoreboard] Compare SUCCESSLY!!!
+[collect ****]
+op is 0
+------------------------------
+Name  Type         Size  Value
+------------------------------
+tr    transaction  -     @1301
+  A   integral     8     'h42 
+  B   integral     8     'heb 
+  op  operation_t  3     no_op
+------------------------------
+UVM_INFO comp/model.sv(30) @ 990000: uvm_test_top.env0.mdl [model] model get transaction!!!
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1313 
+  A   integral     8     'h63  
+  B   integral     8     'he4  
+  op  operation_t  3     add_op
+-------------------------------
+@ 1010000 : [single alu] A: 99,B:228,op:1, result is     0 !!!
+UVM_INFO comp/model.sv(30) @ 1010000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1030000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h147 : rhs = 'h0
+UVM_INFO @ 1030000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1305 vs. result_tr@1325
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1329 
+  A   integral     8     'h2e  
+  B   integral     8     'hec  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 1050000 : [single alu] A: 46,B:236,op:3, result is   327 !!!
+UVM_INFO comp/model.sv(30) @ 1050000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1070000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hc2 : rhs = 'h147
+UVM_INFO @ 1070000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1317 vs. result_tr@1341
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1345 
+  A   integral     8     'hb5  
+  B   integral     8     'hba  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 1090000 : [single alu] A:181,B:186,op:3, result is   194 !!!
+UVM_INFO comp/model.sv(30) @ 1090000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1110000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hf : rhs = 'hc2
+UVM_INFO @ 1110000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1333 vs. result_tr@1357
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1361 
+  A   integral     8     'h19  
+  B   integral     8     'h7a  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 1130000 : [single alu] A: 25,B:122,op:3, result is    15 !!!
+UVM_INFO comp/model.sv(30) @ 1130000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1150000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h63 : rhs = 'hf
+UVM_INFO @ 1150000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1349 vs. result_tr@1373
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1377 
+  A   integral     8     'h76  
+  B   integral     8     'h65  
+  op  operation_t  3     and_op
+-------------------------------
+@ 1170000 : [single alu] A:118,B:101,op:2, result is    99 !!!
+UVM_INFO comp/model.sv(30) @ 1170000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1190000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h64 : rhs = 'h63
+UVM_INFO @ 1190000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1365 vs. result_tr@1389
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1393 
+  A   integral     8     'h5a  
+  B   integral     8     'hce  
+  op  operation_t  3     and_op
+-------------------------------
+@ 1210000 : [single alu] A: 90,B:206,op:2, result is   100 !!!
+UVM_INFO comp/model.sv(30) @ 1210000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1230000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h4a : rhs = 'h64
+UVM_INFO @ 1230000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1381 vs. result_tr@1405
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1409 
+  A   integral     8     'h4a  
+  B   integral     8     'h8f  
+  op  operation_t  3     and_op
+-------------------------------
+@ 1250000 : [single alu] A: 74,B:143,op:2, result is    74 !!!
+UVM_INFO comp/model.sv(30) @ 1250000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1270000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'ha : rhs = 'h4a
+UVM_INFO @ 1270000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1397 vs. result_tr@1421
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1425 
+  A   integral     8     'h8b  
+  B   integral     8     'h1f  
+  op  operation_t  3     add_op
+-------------------------------
+@ 1290000 : [single alu] A:139,B: 31,op:1, result is    10 !!!
+UVM_INFO comp/model.sv(30) @ 1290000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1310000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'haa : rhs = 'ha
+UVM_INFO @ 1310000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1413 vs. result_tr@1437
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1441 
+  A   integral     8     'hf5  
+  B   integral     8     'h91  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 1330000 : [single alu] A:245,B:145,op:3, result is   170 !!!
+UVM_INFO comp/model.sv(30) @ 1330000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1350000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h64 : rhs = 'haa
+UVM_INFO @ 1350000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1429 vs. result_tr@1453
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1457 
+  A   integral     8     'hf3  
+  B   integral     8     'hb4  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 1370000 : [single alu] A:243,B:180,op:3, result is   100 !!!
+UVM_INFO comp/model.sv(30) @ 1370000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1390000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h47 : rhs = 'h64
+UVM_INFO @ 1390000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1445 vs. result_tr@1469
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1473 
+  A   integral     8     'hf3  
+  B   integral     8     'hf5  
+  op  operation_t  3     and_op
+-------------------------------
+@ 1410000 : [single alu] A:243,B:245,op:2, result is    71 !!!
+UVM_INFO comp/model.sv(30) @ 1410000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1430000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hf1 : rhs = 'h47
+UVM_INFO @ 1430000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1461 vs. result_tr@1485
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1489 
+  A   integral     8     'hb0  
+  B   integral     8     'h66  
+  op  operation_t  3     and_op
+-------------------------------
+@ 1450000 : [single alu] A:176,B:102,op:2, result is   241 !!!
+UVM_INFO comp/model.sv(30) @ 1450000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1470000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h20 : rhs = 'hf1
+UVM_INFO @ 1470000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1477 vs. result_tr@1501
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1505 
+  A   integral     8     'h7e  
+  B   integral     8     'h5c  
+  op  operation_t  3     and_op
+-------------------------------
+@ 1490000 : [single alu] A:126,B: 92,op:2, result is    32 !!!
+UVM_INFO comp/model.sv(30) @ 1490000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1510000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h5c : rhs = 'h20
+UVM_INFO @ 1510000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1493 vs. result_tr@1517
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1521 
+  A   integral     8     'hdc  
+  B   integral     8     'h8e  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 1530000 : [single alu] A:220,B:142,op:3, result is    92 !!!
+UVM_INFO comp/model.sv(30) @ 1530000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1550000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h52 : rhs = 'h5c
+UVM_INFO @ 1550000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1509 vs. result_tr@1533
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1537 
+  A   integral     8     'h5f  
+  B   integral     8     'he2  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 1570000 : [single alu] A: 95,B:226,op:3, result is    82 !!!
+UVM_INFO comp/model.sv(30) @ 1570000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1590000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hbd : rhs = 'h52
+UVM_INFO @ 1590000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1525 vs. result_tr@1549
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1553 
+  A   integral     8     'h37  
+  B   integral     8     'hc4  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 1610000 : [single alu] A: 55,B:196,op:3, result is   189 !!!
+UVM_INFO comp/model.sv(30) @ 1610000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1630000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hf3 : rhs = 'hbd
+UVM_INFO @ 1630000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1541 vs. result_tr@1565
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1569 
+  A   integral     8     'h73  
+  B   integral     8     'h14  
+  op  operation_t  3     and_op
+-------------------------------
+@ 1650000 : [single alu] A:115,B: 20,op:2, result is   243 !!!
+UVM_INFO comp/model.sv(30) @ 1650000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1670000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h10 : rhs = 'hf3
+UVM_INFO @ 1670000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1557 vs. result_tr@1581
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1585 
+  A   integral     8     'h55  
+  B   integral     8     'h7b  
+  op  operation_t  3     and_op
+-------------------------------
+@ 1690000 : [single alu] A: 85,B:123,op:2, result is    16 !!!
+UVM_INFO comp/model.sv(30) @ 1690000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1710000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h51 : rhs = 'h10
+UVM_INFO @ 1710000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1573 vs. result_tr@1597
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1601 
+  A   integral     8     'h6b  
+  B   integral     8     'h9f  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 1730000 : [single alu] A:107,B:159,op:3, result is    81 !!!
+UVM_INFO comp/model.sv(30) @ 1730000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1750000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hf4 : rhs = 'h51
+UVM_INFO @ 1750000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1589 vs. result_tr@1613
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1617 
+  A   integral     8     'hdc  
+  B   integral     8     'hce  
+  op  operation_t  3     and_op
+-------------------------------
+@ 1770000 : [single alu] A:220,B:206,op:2, result is   244 !!!
+UVM_INFO comp/model.sv(30) @ 1770000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1790000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hcc : rhs = 'hf4
+UVM_INFO @ 1790000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1605 vs. result_tr@1629
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1633 
+  A   integral     8     'h16  
+  B   integral     8     'hd4  
+  op  operation_t  3     and_op
+-------------------------------
+@ 1810000 : [single alu] A: 22,B:212,op:2, result is   204 !!!
+UVM_INFO comp/model.sv(30) @ 1810000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1830000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h14 : rhs = 'hcc
+UVM_INFO @ 1830000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1621 vs. result_tr@1645
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1649 
+  A   integral     8     'hf7  
+  B   integral     8     'h30  
+  op  operation_t  3     add_op
+-------------------------------
+@ 1850000 : [single alu] A:247,B: 48,op:1, result is    20 !!!
+UVM_INFO comp/model.sv(30) @ 1850000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1870000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h127 : rhs = 'h14
+UVM_INFO @ 1870000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1637 vs. result_tr@1661
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1665 
+  A   integral     8     'h67  
+  B   integral     8     'hf5  
+  op  operation_t  3     and_op
+-------------------------------
+@ 1890000 : [single alu] A:103,B:245,op:2, result is   295 !!!
+UVM_INFO comp/model.sv(30) @ 1890000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1910000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h65 : rhs = 'h127
+UVM_INFO @ 1910000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1653 vs. result_tr@1677
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1681 
+  A   integral     8     'hd7  
+  B   integral     8     'hcb  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 1930000 : [single alu] A:215,B:203,op:3, result is   101 !!!
+UVM_INFO comp/model.sv(30) @ 1930000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1950000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h1c : rhs = 'h65
+UVM_INFO @ 1950000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1669 vs. result_tr@1693
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1697 
+  A   integral     8     'h28  
+  B   integral     8     'hed  
+  op  operation_t  3     and_op
+-------------------------------
+@ 1970000 : [single alu] A: 40,B:237,op:2, result is    28 !!!
+UVM_INFO comp/model.sv(30) @ 1970000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 1990000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h28 : rhs = 'h1c
+UVM_INFO @ 1990000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1685 vs. result_tr@1709
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1713 
+  A   integral     8     'h25  
+  B   integral     8     'hc1  
+  op  operation_t  3     add_op
+-------------------------------
+@ 2010000 : [single alu] A: 37,B:193,op:1, result is    40 !!!
+UVM_INFO comp/model.sv(30) @ 2010000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2030000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'he6 : rhs = 'h28
+UVM_INFO @ 2030000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1701 vs. result_tr@1725
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1729 
+  A   integral     8     'h7b  
+  B   integral     8     'hc3  
+  op  operation_t  3     and_op
+-------------------------------
+@ 2050000 : [single alu] A:123,B:195,op:2, result is   230 !!!
+UVM_INFO comp/model.sv(30) @ 2050000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2070000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h43 : rhs = 'he6
+UVM_INFO @ 2070000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1717 vs. result_tr@1741
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1745 
+  A   integral     8     'hec  
+  B   integral     8     'hcb  
+  op  operation_t  3     add_op
+-------------------------------
+@ 2090000 : [single alu] A:236,B:203,op:1, result is    67 !!!
+UVM_INFO comp/model.sv(30) @ 2090000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2110000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h1b7 : rhs = 'h43
+UVM_INFO @ 2110000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1733 vs. result_tr@1757
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1761 
+  A   integral     8     'he9  
+  B   integral     8     'hbe  
+  op  operation_t  3     add_op
+-------------------------------
+@ 2130000 : [single alu] A:233,B:190,op:1, result is   439 !!!
+UVM_INFO comp/model.sv(30) @ 2130000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2150000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h1a7 : rhs = 'h1b7
+UVM_INFO @ 2150000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1749 vs. result_tr@1773
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1777 
+  A   integral     8     'h79  
+  B   integral     8     'hb0  
+  op  operation_t  3     and_op
+-------------------------------
+@ 2170000 : [single alu] A:121,B:176,op:2, result is   423 !!!
+UVM_INFO comp/model.sv(30) @ 2170000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2190000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h30 : rhs = 'h1a7
+UVM_INFO @ 2190000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1765 vs. result_tr@1789
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1793 
+  A   integral     8     'h3a  
+  B   integral     8     'h32  
+  op  operation_t  3     and_op
+-------------------------------
+@ 2210000 : [single alu] A: 58,B: 50,op:2, result is    48 !!!
+UVM_INFO comp/model.sv(30) @ 2210000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2230000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h32 : rhs = 'h30
+UVM_INFO @ 2230000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1781 vs. result_tr@1805
+[collect ****]
+op is 0
+------------------------------
+Name  Type         Size  Value
+------------------------------
+tr    transaction  -     @1809
+  A   integral     8     'hee 
+  B   integral     8     'he6 
+  op  operation_t  3     no_op
+------------------------------
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1817 
+  A   integral     8     'h7c  
+  B   integral     8     'h62  
+  op  operation_t  3     and_op
+-------------------------------
+@ 2270000 : [single alu] A:124,B: 98,op:2, result is     0 !!!
+UVM_INFO comp/model.sv(30) @ 2270000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2290000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h60 : rhs = 'h32
+UVM_INFO @ 2290000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1797 vs. result_tr@1829
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1833 
+  A   integral     8     'h2b  
+  B   integral     8     'ha2  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 2310000 : [single alu] A: 43,B:162,op:3, result is    96 !!!
+UVM_INFO comp/model.sv(30) @ 2310000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2330000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h89 : rhs = 'h0
+UVM_INFO @ 2330000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1821 vs. result_tr@1845
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1849 
+  A   integral     8     'hab  
+  B   integral     8     'h5   
+  op  operation_t  3     add_op
+-------------------------------
+@ 2350000 : [single alu] A:171,B:  5,op:1, result is   137 !!!
+UVM_INFO comp/model.sv(30) @ 2350000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2370000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hb0 : rhs = 'h60
+UVM_INFO @ 2370000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1837 vs. result_tr@1861
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1865 
+  A   integral     8     'had  
+  B   integral     8     'h9a  
+  op  operation_t  3     and_op
+-------------------------------
+@ 2390000 : [single alu] A:173,B:154,op:2, result is   176 !!!
+UVM_INFO comp/model.sv(30) @ 2390000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2410000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h88 : rhs = 'h89
+UVM_INFO @ 2410000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1853 vs. result_tr@1877
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1881 
+  A   integral     8     'h26  
+  B   integral     8     'hc4  
+  op  operation_t  3     add_op
+-------------------------------
+@ 2430000 : [single alu] A: 38,B:196,op:1, result is   136 !!!
+UVM_INFO comp/model.sv(30) @ 2430000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2450000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hea : rhs = 'hb0
+UVM_INFO @ 2450000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1869 vs. result_tr@1893
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1897 
+  A   integral     8     'h9f  
+  B   integral     8     'h60  
+  op  operation_t  3     and_op
+-------------------------------
+@ 2470000 : [single alu] A:159,B: 96,op:2, result is   234 !!!
+UVM_INFO comp/model.sv(30) @ 2470000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2490000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h0 : rhs = 'h88
+UVM_INFO @ 2490000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1885 vs. result_tr@1909
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1913 
+  A   integral     8     'h84  
+  B   integral     8     'hec  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 2510000 : [single alu] A:132,B:236,op:3, result is     0 !!!
+UVM_INFO comp/model.sv(30) @ 2510000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2530000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h68 : rhs = 'hea
+UVM_INFO @ 2530000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1901 vs. result_tr@1925
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1929 
+  A   integral     8     'h7   
+  B   integral     8     'h4c  
+  op  operation_t  3     and_op
+-------------------------------
+@ 2550000 : [single alu] A:  7,B: 76,op:2, result is   104 !!!
+UVM_INFO comp/model.sv(30) @ 2550000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2570000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h4 : rhs = 'h0
+UVM_INFO @ 2570000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1917 vs. result_tr@1941
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1945 
+  A   integral     8     'h32  
+  B   integral     8     'h28  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 2590000 : [single alu] A: 50,B: 40,op:3, result is     4 !!!
+UVM_INFO comp/model.sv(30) @ 2590000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2610000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h1a : rhs = 'h68
+UVM_INFO @ 2610000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1933 vs. result_tr@1957
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1961 
+  A   integral     8     'h58  
+  B   integral     8     'h6a  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 2630000 : [single alu] A: 88,B:106,op:3, result is    26 !!!
+UVM_INFO comp/model.sv(30) @ 2630000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2650000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h32 : rhs = 'h4
+UVM_INFO @ 2650000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1949 vs. result_tr@1973
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1977 
+  A   integral     8     'hfb  
+  B   integral     8     'h43  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 2670000 : [single alu] A:251,B: 67,op:3, result is    50 !!!
+UVM_INFO comp/model.sv(30) @ 2670000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2690000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hb8 : rhs = 'h1a
+UVM_INFO @ 2690000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1965 vs. result_tr@1989
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @1993 
+  A   integral     8     'hf5  
+  B   integral     8     'h6b  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 2710000 : [single alu] A:245,B:107,op:3, result is   184 !!!
+UVM_INFO comp/model.sv(30) @ 2710000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2730000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h9e : rhs = 'h32
+UVM_INFO @ 2730000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1981 vs. result_tr@2005
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2009 
+  A   integral     8     'hee  
+  B   integral     8     'h1a  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 2750000 : [single alu] A:238,B: 26,op:3, result is   158 !!!
+UVM_INFO comp/model.sv(30) @ 2750000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2770000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hf4 : rhs = 'hb8
+UVM_INFO @ 2770000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@1997 vs. result_tr@2021
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2025 
+  A   integral     8     'h91  
+  B   integral     8     'h4d  
+  op  operation_t  3     add_op
+-------------------------------
+@ 2790000 : [single alu] A:145,B: 77,op:1, result is   244 !!!
+UVM_INFO comp/model.sv(30) @ 2790000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2810000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hde : rhs = 'h9e
+UVM_INFO @ 2810000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2013 vs. result_tr@2037
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2041 
+  A   integral     8     'h1   
+  B   integral     8     'hfc  
+  op  operation_t  3     add_op
+-------------------------------
+@ 2830000 : [single alu] A:  1,B:252,op:1, result is   222 !!!
+UVM_INFO comp/model.sv(30) @ 2830000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2850000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hfd : rhs = 'hf4
+UVM_INFO @ 2850000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2029 vs. result_tr@2053
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2057 
+  A   integral     8     'ha6  
+  B   integral     8     'hdf  
+  op  operation_t  3     add_op
+-------------------------------
+@ 2870000 : [single alu] A:166,B:223,op:1, result is   253 !!!
+UVM_INFO comp/model.sv(30) @ 2870000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2890000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h185 : rhs = 'hde
+UVM_INFO @ 2890000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2045 vs. result_tr@2069
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2073 
+  A   integral     8     'hf0  
+  B   integral     8     'h56  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 2910000 : [single alu] A:240,B: 86,op:3, result is   389 !!!
+UVM_INFO comp/model.sv(30) @ 2910000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2930000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'ha6 : rhs = 'hfd
+UVM_INFO @ 2930000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2061 vs. result_tr@2085
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2089 
+  A   integral     8     'h8a  
+  B   integral     8     'h43  
+  op  operation_t  3     add_op
+-------------------------------
+@ 2950000 : [single alu] A:138,B: 67,op:1, result is   166 !!!
+UVM_INFO comp/model.sv(30) @ 2950000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 2970000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hcd : rhs = 'h185
+UVM_INFO @ 2970000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2077 vs. result_tr@2101
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2105 
+  A   integral     8     'h3c  
+  B   integral     8     'h15  
+  op  operation_t  3     and_op
+-------------------------------
+@ 2990000 : [single alu] A: 60,B: 21,op:2, result is   205 !!!
+UVM_INFO comp/model.sv(30) @ 2990000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3010000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h14 : rhs = 'ha6
+UVM_INFO @ 3010000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2093 vs. result_tr@2117
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2121 
+  A   integral     8     'hfe  
+  B   integral     8     'h82  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 3030000 : [single alu] A:254,B:130,op:3, result is    20 !!!
+UVM_INFO comp/model.sv(30) @ 3030000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3050000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h7c : rhs = 'hcd
+UVM_INFO @ 3050000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2109 vs. result_tr@2133
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2137 
+  A   integral     8     'hd   
+  B   integral     8     'h12  
+  op  operation_t  3     add_op
+-------------------------------
+@ 3070000 : [single alu] A: 13,B: 18,op:1, result is   124 !!!
+UVM_INFO comp/model.sv(30) @ 3070000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3090000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h1f : rhs = 'h14
+UVM_INFO @ 3090000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2125 vs. result_tr@2149
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2153 
+  A   integral     8     'h27  
+  B   integral     8     'h34  
+  op  operation_t  3     and_op
+-------------------------------
+@ 3110000 : [single alu] A: 39,B: 52,op:2, result is    31 !!!
+UVM_INFO comp/model.sv(30) @ 3110000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3130000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h24 : rhs = 'h7c
+UVM_INFO @ 3130000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2141 vs. result_tr@2165
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2169 
+  A   integral     8     'ha4  
+  B   integral     8     'hd2  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 3150000 : [single alu] A:164,B:210,op:3, result is    36 !!!
+UVM_INFO comp/model.sv(30) @ 3150000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3170000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h76 : rhs = 'h1f
+UVM_INFO @ 3170000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2157 vs. result_tr@2181
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2185 
+  A   integral     8     'h36  
+  B   integral     8     'h6c  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 3190000 : [single alu] A: 54,B:108,op:3, result is   118 !!!
+UVM_INFO comp/model.sv(30) @ 3190000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3210000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h5a : rhs = 'h24
+UVM_INFO @ 3210000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2173 vs. result_tr@2197
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2201 
+  A   integral     8     'haf  
+  B   integral     8     'hb0  
+  op  operation_t  3     and_op
+-------------------------------
+@ 3230000 : [single alu] A:175,B:176,op:2, result is    90 !!!
+UVM_INFO comp/model.sv(30) @ 3230000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3250000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'ha0 : rhs = 'h76
+UVM_INFO @ 3250000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2189 vs. result_tr@2213
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2217 
+  A   integral     8     'hd9  
+  B   integral     8     'had  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 3270000 : [single alu] A:217,B:173,op:3, result is   160 !!!
+UVM_INFO comp/model.sv(30) @ 3270000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3290000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h74 : rhs = 'h5a
+UVM_INFO @ 3290000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2205 vs. result_tr@2229
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2233 
+  A   integral     8     'hef  
+  B   integral     8     'hfa  
+  op  operation_t  3     and_op
+-------------------------------
+@ 3310000 : [single alu] A:239,B:250,op:2, result is   116 !!!
+UVM_INFO comp/model.sv(30) @ 3310000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3330000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hea : rhs = 'ha0
+UVM_INFO @ 3330000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2221 vs. result_tr@2245
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2249 
+  A   integral     8     'h4b  
+  B   integral     8     'h2c  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 3350000 : [single alu] A: 75,B: 44,op:3, result is   234 !!!
+UVM_INFO comp/model.sv(30) @ 3350000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3370000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h67 : rhs = 'h74
+UVM_INFO @ 3370000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2237 vs. result_tr@2261
+[collect ****]
+op is 0
+------------------------------
+Name  Type         Size  Value
+------------------------------
+tr    transaction  -     @2265
+  A   integral     8     'hc2 
+  B   integral     8     'h3  
+  op  operation_t  3     no_op
+------------------------------
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2273 
+  A   integral     8     'h6c  
+  B   integral     8     'h60  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 3410000 : [single alu] A:108,B: 96,op:3, result is     0 !!!
+UVM_INFO comp/model.sv(30) @ 3410000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3430000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hc : rhs = 'hea
+UVM_INFO @ 3430000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2253 vs. result_tr@2285
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2289 
+  A   integral     8     'h1c  
+  B   integral     8     'h66  
+  op  operation_t  3     and_op
+-------------------------------
+@ 3450000 : [single alu] A: 28,B:102,op:2, result is    12 !!!
+UVM_INFO comp/model.sv(30) @ 3450000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3470000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h4 : rhs = 'h67
+UVM_INFO @ 3470000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2277 vs. result_tr@2301
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2305 
+  A   integral     8     'h62  
+  B   integral     8     'ha2  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 3490000 : [single alu] A: 98,B:162,op:3, result is     4 !!!
+UVM_INFO comp/model.sv(30) @ 3490000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3510000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hc0 : rhs = 'h0
+UVM_INFO @ 3510000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2293 vs. result_tr@2317
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2321 
+  A   integral     8     'h56  
+  B   integral     8     'h4c  
+  op  operation_t  3     add_op
+-------------------------------
+@ 3530000 : [single alu] A: 86,B: 76,op:1, result is   192 !!!
+UVM_INFO comp/model.sv(30) @ 3530000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3550000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'ha2 : rhs = 'hc
+UVM_INFO @ 3550000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2309 vs. result_tr@2333
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2337 
+  A   integral     8     'h4   
+  B   integral     8     'h54  
+  op  operation_t  3     add_op
+-------------------------------
+@ 3570000 : [single alu] A:  4,B: 84,op:1, result is   162 !!!
+UVM_INFO comp/model.sv(30) @ 3570000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3590000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h58 : rhs = 'h4
+UVM_INFO @ 3590000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2325 vs. result_tr@2349
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2353 
+  A   integral     8     'h93  
+  B   integral     8     'h7d  
+  op  operation_t  3     add_op
+-------------------------------
+@ 3610000 : [single alu] A:147,B:125,op:1, result is    88 !!!
+UVM_INFO comp/model.sv(30) @ 3610000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3630000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h110 : rhs = 'hc0
+UVM_INFO @ 3630000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2341 vs. result_tr@2365
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2369 
+  A   integral     8     'he2  
+  B   integral     8     'h56  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 3650000 : [single alu] A:226,B: 86,op:3, result is   272 !!!
+UVM_INFO comp/model.sv(30) @ 3650000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3670000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hb4 : rhs = 'ha2
+UVM_INFO @ 3670000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2357 vs. result_tr@2381
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2385 
+  A   integral     8     'hac  
+  B   integral     8     'h17  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 3690000 : [single alu] A:172,B: 23,op:3, result is   180 !!!
+UVM_INFO comp/model.sv(30) @ 3690000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3710000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hbb : rhs = 'h58
+UVM_INFO @ 3710000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2373 vs. result_tr@2397
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2401 
+  A   integral     8     'hc   
+  B   integral     8     'h26  
+  op  operation_t  3     and_op
+-------------------------------
+@ 3730000 : [single alu] A: 12,B: 38,op:2, result is   187 !!!
+UVM_INFO comp/model.sv(30) @ 3730000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3750000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h4 : rhs = 'h110
+UVM_INFO @ 3750000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2389 vs. result_tr@2413
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2417 
+  A   integral     8     'hdd  
+  B   integral     8     'h9b  
+  op  operation_t  3     and_op
+-------------------------------
+@ 3770000 : [single alu] A:221,B:155,op:2, result is     4 !!!
+UVM_INFO comp/model.sv(30) @ 3770000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3790000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h99 : rhs = 'hb4
+UVM_INFO @ 3790000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2405 vs. result_tr@2429
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2433 
+  A   integral     8     'h9d  
+  B   integral     8     'hfa  
+  op  operation_t  3     and_op
+-------------------------------
+@ 3810000 : [single alu] A:157,B:250,op:2, result is   153 !!!
+UVM_INFO comp/model.sv(30) @ 3810000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3830000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h98 : rhs = 'hbb
+UVM_INFO @ 3830000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2421 vs. result_tr@2445
+[collect ****]
+op is 3
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2449 
+  A   integral     8     'h62  
+  B   integral     8     'hc9  
+  op  operation_t  3     xor_op
+-------------------------------
+@ 3850000 : [single alu] A: 98,B:201,op:3, result is   152 !!!
+UVM_INFO comp/model.sv(30) @ 3850000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3870000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'hab : rhs = 'h4
+UVM_INFO @ 3870000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2437 vs. result_tr@2461
+[collect ****]
+op is 2
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2465 
+  A   integral     8     'h14  
+  B   integral     8     'hb5  
+  op  operation_t  3     and_op
+-------------------------------
+@ 3890000 : [single alu] A: 20,B:181,op:2, result is   171 !!!
+UVM_INFO comp/model.sv(30) @ 3890000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3910000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h14 : rhs = 'h99
+UVM_INFO @ 3910000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2453 vs. result_tr@2477
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2481 
+  A   integral     8     'h5   
+  B   integral     8     'ha8  
+  op  operation_t  3     add_op
+-------------------------------
+@ 3930000 : [single alu] A:  5,B:168,op:1, result is    20 !!!
+UVM_INFO comp/model.sv(30) @ 3930000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3950000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'had : rhs = 'h98
+UVM_INFO @ 3950000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2469 vs. result_tr@2493
+[collect ****]
+op is 1
+-------------------------------
+Name  Type         Size  Value 
+-------------------------------
+tr    transaction  -     @2497 
+  A   integral     8     'h2c  
+  B   integral     8     'hf4  
+  op  operation_t  3     add_op
+-------------------------------
+@ 3970000 : [single alu] A: 44,B:244,op:1, result is   173 !!!
+UVM_INFO comp/model.sv(30) @ 3970000: uvm_test_top.env0.mdl [model] model get transaction!!!
+UVM_INFO @ 3990000: reporter [MISCMP] Miscompare for result_tr.result: lhs = 'h120 : rhs = 'hab
+UVM_INFO @ 3990000: reporter [MISCMP] 1 Miscompare(s) for object model_result_tr@2485 vs. result_tr@2505
+UVM_INFO seq/sequence0.sv(26) @ 4980000: uvm_test_top.env0.i_agt.sqr@@seq0 [sequence0] post_body
+UVM_INFO /home/IC/uvm/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 4980000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
 
 --- UVM Report Summary ---
 
 ** Report counts by severity
-UVM_INFO :   16
+UVM_INFO :  275
 UVM_WARNING :    0
 UVM_ERROR :    0
 UVM_FATAL :    0
 ** Report counts by id
+[MISCMP]   148
 [RNTST]     1
 [TEST_DONE]     1
 [driver]     1
-[model]     5
-[scoreboard]     5
+[model]    98
+[scoreboard]    23
 [sequence0]     3
 $finish called from file "/home/IC/uvm/uvm-1.1d/src/base/uvm_root.svh", line 430.
-$finish at simulation time              1240000
+$finish at simulation time              4980000
            V C S   S i m u l a t i o n   R e p o r t 
-Time: 1240000 ps
-CPU Time:      0.760 seconds;       Data structure size:   0.3Mb
-Thu Aug 22 23:25:19 2019
+Time: 4980000 ps
+CPU Time:      0.830 seconds;       Data structure size:   0.3Mb
+Sat Aug 24 14:12:50 2019

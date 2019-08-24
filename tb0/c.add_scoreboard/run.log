@@ -2,7 +2,7 @@ Command: vcs -sverilog +acc +vpi +incdir+/home/IC/uvm/uvm-1.1d/src /home/IC/uvm/
 /home/IC/uvm/uvm-1.1d/src/dpi/uvm_dpi.cc -CFLAGS -DVCS -timescale=1ns/1ps -debug_all \
 -f filelist -l run.log
                          Chronologic VCS (TM)
-            Version I-2014.03 -- Thu Aug 22 23:25:00 2019
+            Version I-2014.03 -- Sat Aug 24 14:12:31 2019
                Copyright (c) 1991-2014 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -318,14 +318,9 @@ Top Level Modules:
 TimeScale is 1 ns / 1 ps
 Starting vcs inline pass...
 7 modules and 0 UDP read.
-	However, due to incremental compilation, only 3 modules need to be compiled.
+	However, due to incremental compilation, only 1 module needs to be compiled.
 recompiling package vcs_paramclassrepository because:
-	Cross module references have been changed, added or deleted.
-recompiling package tb_pkg because:
 	This module or some inlined child module(s) has/have been modified.
-recompiling module alu_bfm because:
-	This module or some inlined child module(s) has/have been modified.
-All of 3 modules done
 make[1]: Entering directory `/home/IC/Desktop/my_uvm/tb0/c.add_scoreboard/csrc'
 rm -f _csrc*.so linux_scvhdl_*.so pre_vcsobj_*.so share_vcsobj_*.so
 ld -m elf_i386 -shared -o .//../simv.daidir//_csrc1.so --whole-archive _vcsobj_1_1.a \
@@ -345,4 +340,4 @@ rmapats_mop.o rmapats.o rmar.o           /opt/Synopsys/VCS2014/linux/lib/libzero
 /opt/Synopsys/VCS2014/linux/lib/ctype-stubs_32.a -ldl -lm  -lc -lpthread -ldl 
 ../simv up to date
 make[1]: Leaving directory `/home/IC/Desktop/my_uvm/tb0/c.add_scoreboard/csrc'
-CPU time: 4.992 seconds to compile + .592 seconds to elab + .267 seconds to link
+CPU time: 5.181 seconds to compile + .554 seconds to elab + .272 seconds to link

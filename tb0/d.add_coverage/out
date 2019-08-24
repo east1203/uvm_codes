@@ -1,0 +1,16 @@
+bins add_00 = binsof(all_op) intersect {add_op} &&
+  (binsof(a_cov.zeros) || binsof(b_cov.zeros))
+bins add_FF = binsof(all_op) intersect {add_op} &&
+  (binsof(a_cov.ones) || binsof(b_cov.ones))
+bins and_00 = binsof(all_op) intersect {and_op} &&
+  (binsof(a_cov.zeros) || binsof(b_cov.zeros))
+bins and_FF = binsof(all_op) intersect {and_op} &&
+  (binsof(a_cov.ones) || binsof(b_cov.ones))
+bins xor_00 = binsof(all_op) intersect {xor_op} &&
+  (binsof(a_cov.zeros) || binsof(b_cov.zeros))
+bins xor_FF = binsof(all_op) intersect {xor_op} &&
+  (binsof(a_cov.ones) || binsof(b_cov.ones))
+bins mul_00 = binsof(all_op) intersect {mul_op} &&
+  (binsof(a_cov.zeros) || binsof(b_cov.zeros))
+bins mul_FF = binsof(all_op) intersect {mul_op} &&
+  (binsof(a_cov.ones) || binsof(b_cov.ones))

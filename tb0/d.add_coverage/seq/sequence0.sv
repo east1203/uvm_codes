@@ -17,8 +17,14 @@ endtask
 task body();
   `uvm_info("sequence0","body",UVM_LOW)
 
-  repeat(100) begin
-    `uvm_do(tr);
+  repeat(50) begin
+    //`uvm_do(tr);
+    //tr=new();
+    `uvm_create(tr);
+    //tr.con_op.constraint_mode(0);
+    //tr.con_data.constraint_mode(0);
+    assert(tr.randomize);
+    `uvm_send(tr);
   end
 #1000;
 endtask

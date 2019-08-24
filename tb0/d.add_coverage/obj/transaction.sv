@@ -20,7 +20,7 @@ class transaction extends uvm_sequence_item;
     };
   }
 
-  constraint data {
+  constraint con_data {
     A dist{8'h00:=1,[8'h01:8'hfe]:=1,8'hff:=1};
     B dist{8'h00:=1,[8'h01:8'hfe]:=1,8'hff:=1};
   }
