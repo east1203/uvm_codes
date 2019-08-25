@@ -1,0 +1,15 @@
++incdir+obj
++incdir+cb
++incdir+comp
++incdir+seq
++incdir+case
+#/home/IC/Desktop/UVMPrimer/dut/single_alu.v
+#/home/IC/Desktop/UVMPrimer/dut/mul_alu.v
+#/home/IC/Desktop/UVMPrimer/dut/tinyalu.v
+./dut/single_alu.v
+./dut/mul_alu.v
+./dut/tinyalu.v
+
+tb_pkg.sv
+alu_bfm.sv
+top.sv
