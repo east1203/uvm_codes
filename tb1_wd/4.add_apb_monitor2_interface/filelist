@@ -1,0 +1,13 @@
++incdir+obj
++incdir+comp
++incdir+seq
++incdir+cases
+../watchdog/wd_define.v
+../watchdog/watchdog.v
+../watchdog/wd_apb.v
+../watchdog/wd_top.v
+
+tb_pkg.sv
+wd_bfm.sv
+top.sv
+
