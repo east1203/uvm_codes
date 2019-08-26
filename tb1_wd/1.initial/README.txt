@@ -1,0 +1,48 @@
+
+2019-08-25
+
+
+******** file cotegory ********
+[watchdog]
+  wd_top.v
+  wd_apb.v
+  watch.v
+  wd_define.v
+  filelist.f
+[obj] 
+  transaction.sv
+[comp]
+  driver.sv
+  sequencer.sv
+  agent.sv
+  enviroment.sv
+[seq]
+  sequence0.sv
+[cases]
+  default_case.sv
+  base_case.sv
+  case0.sv
+
+top.sv
+wd_bfm.sv
+tb_pkg.sv
+filelist
+Makefile
+README.txt
+
+******* tb structure ********
+top
+  ->case0
+    ->env
+      ->i_agt
+        ->drv
+        ->sqr
+  ->dut
+  ->bfm
+
+
+
+(new) Try to create a APB agent.
+(new) Have not writen drive_one_pkg task
+(new) Do not have input monitor
+
