@@ -8,7 +8,8 @@ class agent extends uvm_agent;
 
 driver drv;
 sequencer sqr;
-
+monitor_apb mon_apb;
+uvm_analysis_port#(transaction) ap_apb;
 
 function new(string name="agent",uvm_component parent=null);
   super.new(name,parent);
@@ -21,17 +22,21 @@ function void build_phase(uvm_phase phase);
   if(is_active==UVM_ACTIVE) begin
     drv=driver::type_id::create("drv",this);
     sqr=sequencer::type_id::create("sqr",this);
+    mon_apb=monitor_apb::type_id::create("mon_apb",this);
   end
   if(is_active==UVM_PASSIVE) begin
   
   end
-  
+
 
 endfunction
 
 function void connect_phase(uvm_phase phase);
   super.connect_phase(phase);
   drv.seq_item_port.connect(sqr.seq_item_export);
+  if(is_active==UVM_ACTIVE) begin
+    ap_apb=mon_apb.ap;
+  end
 endfunction
 
 

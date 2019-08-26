@@ -1,0 +1,6 @@
+29:UVM_INFO comp/monitor_apb.sv(33) @ 2860000: uvm_test_top.env.i_agt.mon_apb [monitor_apb] monitor_apb collect one pkg
+58:UVM_INFO comp/monitor_apb.sv(33) @ 20060000: uvm_test_top.env.i_agt.mon_apb [monitor_apb] monitor_apb collect one pkg
+87:UVM_INFO comp/monitor_apb.sv(33) @ 28360000: uvm_test_top.env.i_agt.mon_apb [monitor_apb] monitor_apb collect one pkg
+116:UVM_INFO comp/monitor_apb.sv(33) @ 41100000: uvm_test_top.env.i_agt.mon_apb [monitor_apb] monitor_apb collect one pkg
+145:UVM_INFO comp/monitor_apb.sv(33) @ 43520000: uvm_test_top.env.i_agt.mon_apb [monitor_apb] monitor_apb collect one pkg
+189:[monitor_apb]     5

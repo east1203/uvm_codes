@@ -30,16 +30,21 @@ endtask
 
 task drive_one_pkg(transaction tr);
   psel=1'b1;
-  @(posedge pclk);
+  // every delay_num cycles >> penable=1'b1
+  // driver at negedge pclk
+  repeat(tr.delay_num) @(negedge pclk);
   penable=1'b1;
   pwrite=tr.pwrite;
   pwdata=tr.pwdata;
   paddr=tr.paddr;
+  // delay one clk
+  @(negedge pclk);
   @(posedge pclk);
   if(tr.pwrite==1'b0)
     tr.prdata=bfm.prdata;
   psel=1'b0;
   penable=1'b0;
+  repeat(2) @(posedge pclk);
 endtask
 
 endinterface
