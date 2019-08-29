@@ -8,8 +8,8 @@
                 input psel,
                 input penable,
                 input   [7:0]   paddr,
-                input   [31:0]   pwdata,
-                output  [31:0]   prdata,
+                input   [7:0]   pwdata,
+                output  [7:0]   prdata,
                 output          timeout,
                 output          intr
               );

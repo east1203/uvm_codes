@@ -36,7 +36,7 @@
    if(prst_ == 1'b0) begin
       flag_r        <=  1'h0;
       update_r      <=  1'h0;
-      mode_r        <=  2'b0;
+      mode_r        <=  2'b10; //modified 2019-08-29
       StartValue_r  <=  32'hffffffff;     
    end
    else if(psel && penable && pwrite) begin

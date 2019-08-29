@@ -1,6 +1,6 @@
 
 #case="default_case"
-case=case0
+case="reg_case"
 
 run: vcs sim
 

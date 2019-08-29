@@ -17,18 +17,15 @@
           output intr  // 中断
  
  );
-
-wire enabel;
 reg timeout_r;
 reg intr_r;
-reg [31:0]  count;
-reg [1:0] count_int; // 超时计数
-reg modesel;//工作模式
-
 assign timeout  = timeout_r;
 assign intr      = intr_r;
 
-assign enable = mode[1];
+wire enable = mode[1];
+reg [31:0]  count;
+reg [1:0] count_int; // 超时计数
+reg modesel;//工作模式
             //1 一次超时中断，两次超时复位
             //0 一次超时复位
 always@(posedge clk or negedge rst_) begin
@@ -57,10 +54,6 @@ always@(posedge clk or negedge rst_) begin
     if(count  ==  32'b0) begin //计数到0
       count <= StartValue;
       case(modesel)
-        1'b0: begin
-          timeout_r <=  1'b1;
-          count_int <=  2'b0;
-        end
         1'b1: begin // 工作模式1
           if(count_int  == 1'b1) begin
             timeout_r <=  1'b1;
@@ -71,6 +64,10 @@ always@(posedge clk or negedge rst_) begin
             intr_r     <=  1'b1;
           end
         end
+        1'b0: begin
+          timeout_r <=  1'b1;
+          count_int <=  2'b0;
+        end
       endcase
     end
     else begin
@@ -78,7 +75,7 @@ always@(posedge clk or negedge rst_) begin
       timeout_r <=  1'b0;
     end
   end
-  else count <= count; 
+  
 end
 
 

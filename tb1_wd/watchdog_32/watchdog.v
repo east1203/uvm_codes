@@ -18,7 +18,7 @@
  
  );
 
-wire enabel;
+wire enable;
 reg timeout_r;
 reg intr_r;
 reg [31:0]  count;

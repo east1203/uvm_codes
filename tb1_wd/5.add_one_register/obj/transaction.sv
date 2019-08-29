@@ -1,9 +1,12 @@
 `ifndef TRANSACTION__SV
 `define TRANSACTION__SV
 
+typedef enum  {READ,WRITE} op;
+
 class transaction extends uvm_sequence_item;
 
-rand bit pwrite;
+//rand bit pwrite;
+rand op pwrite;
 rand bit [7:0] paddr;
 rand bit [31:0] pwdata;
 bit [31:0] prdata;
@@ -12,7 +15,7 @@ bit [31:0] prdata;
 rand bit[15:0] delay_num;
 
 `uvm_object_utils_begin(transaction);
-  `uvm_field_int(pwrite,UVM_ALL_ON)
+  `uvm_field_enum(op,pwrite,UVM_ALL_ON)
   `uvm_field_int(paddr ,UVM_ALL_ON)
   `uvm_field_int(pwdata,UVM_ALL_ON)
   `uvm_field_int(prdata,UVM_ALL_ON)
@@ -20,7 +23,7 @@ rand bit[15:0] delay_num;
 `uvm_object_utils_end
 
 constraint con {
-  delay_num inside {[100:1000]};
+  delay_num inside {[0:30]};
 }
 
 constraint con_sig{
@@ -36,8 +39,6 @@ constraint data{
 function new(string name="transaction");
   super.new(name);
 endfunction
-
-
 
 
 endclass

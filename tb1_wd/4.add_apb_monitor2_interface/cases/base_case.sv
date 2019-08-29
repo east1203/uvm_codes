@@ -16,6 +16,10 @@ function void build_phase(uvm_phase phase);
   env=enviroment::type_id::create("env",this);
 endfunction 
 
+function void report_phase(uvm_phase phase);
+  super.report_phase(phase);
+  uvm_top.print_topology();
+endfunction
 
 endclass
 
