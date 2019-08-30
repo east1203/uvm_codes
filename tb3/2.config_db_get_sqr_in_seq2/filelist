@@ -1,0 +1,11 @@
++incdir+obj
++incdir+comp
++incdir+seq
++incdir+cases
+
+# UDT files directory
+
+pkg.sv
+bfm.sv
+top.sv
+
