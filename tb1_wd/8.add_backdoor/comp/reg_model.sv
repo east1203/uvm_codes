@@ -75,9 +75,9 @@ class reg_model extends uvm_reg_block;
     feeddog = reg_feeddog::type_id::create("feeddog",null,get_full_name());
     Mode=reg_Mode::type_id::create("Mode",null,get_full_name());
 
-    StartValue.configure(this,null,"");
-    feeddog.configure(this,null,"");
-    Mode.configure(this,null,"");
+    StartValue.configure(this,null,"StartValue");
+    feeddog.configure(this,null,"feeddog");
+    Mode.configure(this,null,"mode");
 
     StartValue.build();
     feeddog.build();
