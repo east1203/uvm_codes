@@ -1,0 +1,11 @@
+29:UVM_INFO seq/reg_sequence.sv(20) @ 0: uvm_test_top.vsqr@@reg_sequence [reg_sequence] do pre_body()
+47:UVM_INFO seq/reg_sequence.sv(34) @ 110000: uvm_test_top.vsqr@@reg_sequence [reg_sequence] READ StartValue is 00000000ffffffff
+65:UVM_INFO seq/reg_sequence.sv(39) @ 170000: uvm_test_top.vsqr@@reg_sequence [reg_sequence] READ feeddog is 0000000000000000
+83:UVM_INFO seq/reg_sequence.sv(44) @ 230000: uvm_test_top.vsqr@@reg_sequence [reg_sequence] READ Mode is 0000000000000002
+101:UVM_INFO seq/reg_sequence.sv(52) @ 390000: uvm_test_top.vsqr@@reg_sequence [reg_sequence] WRITE StartValue 
+119:UVM_INFO seq/reg_sequence.sv(60) @ 1450000: uvm_test_top.vsqr@@reg_sequence [reg_sequence] WRITE StartValue 
+137:UVM_INFO seq/reg_sequence.sv(66) @ 2010000: uvm_test_top.vsqr@@reg_sequence [reg_sequence] WRITE StartValue 
+155:UVM_INFO seq/reg_sequence.sv(73) @ 2070000: uvm_test_top.vsqr@@reg_sequence [reg_sequence] Write Mode 0x0
+173:UVM_INFO seq/reg_sequence.sv(79) @ 2230000: uvm_test_top.vsqr@@reg_sequence [reg_sequence] Write mode 0x3
+191:UVM_INFO seq/reg_sequence.sv(87) @ 3290000: uvm_test_top.vsqr@@reg_sequence [reg_sequence] WRITE StartValue 
+209:UVM_INFO seq/reg_sequence.sv(93) @ 3850000: uvm_test_top.vsqr@@reg_sequence [reg_sequence] WRITE StartValue 
