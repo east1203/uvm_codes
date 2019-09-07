@@ -6,6 +6,9 @@ typedef class driver;
 
 class driver_cb extends uvm_callback;
   `uvm_object_utils(driver_cb);
+  function new(string name="driver_cb");
+
+  endfunction
   virtual task trans_received(driver u_drv,transaction tr); endtask
   virtual task trans_executed(driver u_drv,transaction tr); endtask
 endclass

@@ -10,6 +10,7 @@ vcs:
 		+incdir+${UVM_HOME}/src	\
 		${UVM_HOME}/src/uvm_pkg.sv	\
 		${UVM_HOME}/src/dpi/uvm_dpi.cc	\
+		${UVM_HOME}/src/uvm_macros.svh 	\
 		-CFLAGS -DVCS	\
 		-timescale=1ns/1ps	\
 		-debug_all	\

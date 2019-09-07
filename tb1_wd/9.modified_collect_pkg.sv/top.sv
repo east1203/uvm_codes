@@ -23,6 +23,7 @@ wd_top u_wd(
                               
 
 initial begin
+  uvm_config_db#(string)::set(null,"*","hdl_path","top.u_wd");
   uvm_config_db#(virtual wd_bfm)::set(null,"uvm_test_top.env.i_agt","bfm",bfm);
   run_test();
 end

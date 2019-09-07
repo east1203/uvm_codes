@@ -5,6 +5,8 @@
 class base_case extends uvm_test;
   
 `uvm_component_utils(base_case);
+// ------------- (new)
+string hdl_path;
 
 enviroment env;
 reg_model rm;
@@ -18,12 +20,17 @@ endfunction
 function void build_phase(uvm_phase phase);
   env=enviroment::type_id::create("env",this);
   vsqr=vsequencer::type_id::create("vsqr",this);
+// ------------- (new)
+  uvm_config_db#(string)::get(this,"","hdl_path",hdl_path);
+
   rm=reg_model::type_id::create("rm",this);
   rm.configure(null,"");
   rm.build();
   rm.lock_model();
   rm.reset();
-  rm.set_hdl_path_root("top.u_wd");
+// ------------- (new)
+  rm.set_hdl_path_root(hdl_path);
+  //rm.set_hdl_path_root("top.u_wd");
   reg_sqr_adapter=new("reg_sqr_adapter");
  // env.p_rm=this.rm
 endfunction 
