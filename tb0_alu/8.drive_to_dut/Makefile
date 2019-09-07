@@ -24,7 +24,8 @@ clean:
 	rm -rf csrc simv.daidir
 	rm -rf vc_hdrs.h
 	rm -rf ucli.key
-	rm error.log info.log fatal.log warning.log
+	rm -rf DVEfiles *.vpd
+	rm -rf error.log info.log fatal.log warning.log
 
 
 

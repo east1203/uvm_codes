@@ -16,7 +16,7 @@ vcs:
 
 
 sim:
-	./simv +UVM_TESTNAME=case0 -l sim.log
+	./simv +UVM_TESTNAME=case0 +UVM_TR_RECORD +UVM_LOG_RECORD -l sim.log
 
 dve:
 	dve -vpd *.vpd&

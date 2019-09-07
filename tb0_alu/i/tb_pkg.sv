@@ -17,6 +17,7 @@ typedef enum bit[2:0]{
 
   `include "result_transaction.sv"
   `include "transaction.sv"
+  `include "sequence_base.sv"
   `include "sequence0.sv"
   `include "sequencer.sv"
   `include "driver.sv"
