@@ -1,0 +1,19 @@
+Command: ./simv +UVM_TESTNAME=backdoor_case -l sim.log
+  with `UVM_NO_DEPRECATED undefined.
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+UVM_INFO @ 0: reporter [RNTST] Running test backdoor_case...
+UVM_INFO comp/agent.sv(27) @ 0: uvm_test_top.env.i_agt [agent] agent build_phase
+UVM_INFO seq/sequence_base.sv(15) @ 0: uvm_test_top.vsqr@@backdoor_seq [backdoor_seq] backdoor_seq pre_body raising run objection
+UVM_INFO seq/backdoor_seq.sv(20) @ 10000: uvm_test_top.vsqr@@backdoor_seq [backdoor_seq] backdoor_seq :BACKDOOR peek Mode is 2
+UVM_INFO seq/backdoor_seq.sv(22) @ 10000: uvm_test_top.vsqr@@backdoor_seq [backdoor_seq] backdoor_seq : BACKDOOR peek StartValue is ffffffff
+UVM_INFO seq/backdoor_seq.sv(25) @ 110000: uvm_test_top.vsqr@@backdoor_seq [backdoor_seq] backdoor_seq:BACKDOOR poke StartValue is 'hff
+UVM_INFO seq/backdoor_seq.sv(28) @ 110000: uvm_test_top.vsqr@@backdoor_seq [backdoor_seq] backdoor_seq BACKDOOR peek StartValue is ffffffff
+UVM_INFO seq/backdoor_seq.sv(31) @ 110000: uvm_test_top.vsqr@@backdoor_seq [backdoor_seq] BACKDOOR READ backdoor_seq StartValue is ffffffff
+UVM_INFO seq/sequence_base.sv(22) @ 110000: uvm_test_top.vsqr@@backdoor_seq [backdoor_seq] backdoor_seq pre_body raising run objection
+UVM_INFO /home/IC/uvm/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 150000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO @ 150000: reporter [UVMTOP] UVM testbench topology:
+UVM_INFO :   11
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0

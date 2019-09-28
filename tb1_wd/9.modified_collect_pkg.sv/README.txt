@@ -46,9 +46,9 @@ top
         ->drv
         ->sqr
         ->mon_apb
-      ->rm   ------- (new)
-      ->adapter ----- (new)
-      ->vsqr  ----- (new)
+    ->rm   ------- (new)
+    ->adapter ----- (new)
+    ->vsqr  ----- (new)
   ->dut
   ->bfm
 

@@ -12,23 +12,27 @@
 [obj] 
   transaction.sv
 [comp]
-  driver.sv
+  driver.sv  
   sequencer.sv
-  monitor_apb.sv
-  agent.sv
+  monitor_apb.sv ----(fix error)
+  agent.sv  
   enviroment.sv
-  reg_model.sv  ----- (modified)
+  reg_model.sv 
   vsequencer.sv 
 [seq]
+  sequence_base.sv  
   sequence0.sv
   vsequence.sv 
   reg_sequence.sv 
+  backdoor_seq.sv 
+  predictor_seq.sv ------- (new)
 [cases]
   default_case.sv
-  base_case.sv
+  base_case.sv -------------- (modified)
   case0.sv
   reg_case.sv 
-
+  backdoor_case.sv 
+  predictor_case.sv ------(new)
 top.sv
 wd_bfm.sv
 tb_pkg.sv
@@ -38,17 +42,45 @@ README.txt
 
 ******* tb structure ********
 top
-  ->case0
+  ->backdoor_case
     ->env
       ->i_agt
         ->drv
         ->sqr
         ->mon_apb
-    ->rm   ------- (new)
-    ->adapter ----- (new)
-    ->vsqr  ----- (new)
+    ->rm   --
+    ->adapter 
+    ->vsqr  -
+    ->reg_predictor
+    ->mon_adapter
   ->dut
   ->bfm
+
+==========================================
+==========================================
+==========================================
+==========================================
+(new) 2019-09-28
+The monitor is wrong.Now fixed it.
+
+(new) 2019-09-28
+I try to  add uvm_reg_predictor to register model to predict 
+the DUT's register value.But it can not work.
+
+==========================================
+==========================================
+(new) 2019 -09- 07
+
+Modified the monitor_apb.sv .
+Seperate collection operation to wr_detect and rd_detect.
+==========================================
+==========================================
+(new) 2019-09-02
+  Add backdoor to register model
+==========================================
+(new) 2019-09-02
+  Modifed codes to be better.
+  Add callback in driver.
 ==========================================
 ==========================================
 (new) 2019--8-31
@@ -58,6 +90,7 @@ top
   The *.vpd file is right; 
 ==========================================
 ==========================================
+
 (new)  2019-08-29
   Add register model to tb.
   In reg_sequence I read and write "StartValue" register which has 'h00 address.
